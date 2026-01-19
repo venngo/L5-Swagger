@@ -35,7 +35,7 @@
     "php": "^8.2",
     "laravel/framework": "^12.1 || ^11.44",
     "zircote/swagger-php": "^6.0",
-    "swagger-api/swagger-ui": ">=5.18.3",
+    "swagger-api/swagger-ui": ">=5.30.3",
     "symfony/yaml": "^5.0 || ^6.0 || ^7.0",
     "ext-json": "*"
   },
