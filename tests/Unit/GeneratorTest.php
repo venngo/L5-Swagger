@@ -11,7 +11,7 @@ use OpenApi\Analysers\AttributeAnnotationFactory;
 use OpenApi\Analysers\DocBlockAnnotationFactory;
 use OpenApi\Analysers\ReflectionAnalyser;
 use OpenApi\OpenApiException;
-use OpenApi\Processors\CleanUnmerged;
+use OpenApi\Processors\AugmentParameters;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\TestDox;
 use Symfony\Component\Yaml\Parser;
@@ -197,7 +197,7 @@ class GeneratorTest extends TestCase
                 new DocBlockAnnotationFactory(),
             ]),
             'open_api_spec_version' => '3.1.0',
-            'processors' => [new CleanUnmerged],
+            'processors' => [new AugmentParameters],
             'default_processors_configuration' => ['operationId' => ['hash' => false]],
         ];
 
